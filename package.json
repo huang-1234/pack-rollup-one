@@ -1,0 +1,31 @@
+{
+  "name": "light-store",
+  "version": "1.0.0",
+  "description": "light lite store state",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "cross-env NODE_ENV=development INPUT_FILE=./src/index.ts rollup -c ../../rollup.config.js -w",
+    "build:pro": "cross-env NODE_ENV=production INPUT_FILE=./src/index.ts rollup -c ../../rollup.config.js",
+    "lint": "eslint ./packages --ext ts --ext tsx",
+    "fix": "eslint ./packages --ext ts --ext tsx --fix"
+  },
+  "keywords": [
+    "light",
+    "lite",
+    "store",
+    "state"
+  ],
+  "author": "huangsq",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-typescript": "^11.1.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-plugin-react": "^7.33.2",
+    "rollup": "^3.29.3",
+    "typescript": "^5.2.2"
+  }
+}
