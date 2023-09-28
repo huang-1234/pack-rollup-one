@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 export type TReviver = (this: any, key: string, value: any) => any
 export function safeJsonParse(text: string, reviver?: TReviver, defaultValue?: any): any {
